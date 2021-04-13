@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>MusicMock2</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <button onClick="parent.location='index.html'" value='click here'>Home</button>
+            <button onClick="parent.location='about.html'" value='click here'>About</button>
+            <button onClick="parent.location='help.html'" value='click here'>Help</button>
+        </div>
+
+        <div class="side">
+            <img class="subpic" src="https://bit.ly/3mr1MtW" alt="headphones"> 
+            <h1>Dance App</h1>
+            <p>
+               This music is from Bensound.com. Dance to the 
+               thrilling and fun sounds of the ukelele. Click the play button.
+             </p>
+            <img class="play" src="https://bit.ly/2Q3O3gs" id="icon">
+            <img class="pause" src="https://bit.ly/3fREUT2" id="deicon">
+            
+      </div>
+    </div>
+    <audio id="mySong">
+        <source src="https://bit.ly/2Rjlpsr" type="audio/mp3">
+    </audio>
+    
+    <script>
+        var mySong = document.getElementById("mySong");
+        var icon = document.getElementById("icon");
+        var deicon = document.getElementById("deicon");
+    
+        icon.onclick= function(){
+                mySong.play();
+                icon.src = "https://bit.ly/2Q3O3gs";
+            }
+        deicon.onclick= function(){
+           
+                mySong.pause();
+                deicon.src = "https://bit.ly/3fREUT2";
+        }
+        
+    </script>
+</body>
+</html>
