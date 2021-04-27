@@ -120,4 +120,11 @@ p{
         padding-left: 20%;
         align-items: center;
     }
+    h1{
+        padding-left: 10%;
+        color: white;
+        font-family:  cursive; 
+        font-weight: 600;
+        font-size:50px;
+    }
 }
